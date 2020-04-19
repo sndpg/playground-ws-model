@@ -1,8 +1,7 @@
 package org.psc.playground.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 /**
  * Class for a default question.
@@ -10,6 +9,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@With
+@SuperBuilder
 public class Question {
     /**
      * Id.
